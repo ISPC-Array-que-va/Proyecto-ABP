@@ -13,7 +13,6 @@ Mapa de lugares de adopción, Descripción de la mascota, Fotos del lugar, Redes
 - Iván Bürcher
 - Valen Flores
 - Juan Morales
-- Victoria Torres
 - Exequiel Vera
 - Lautaro Faure
 

@@ -14,11 +14,6 @@
 - 21 años
 - https://github.com/JuandMorales96
 
-## Victoria Torres
-- 26 años
-- https://github.com/VictoriaTorres0
-- Programadora Front-End
-
 ## Exequiel Vera
 - 29 años
 - https://github.com/VeraExe95
