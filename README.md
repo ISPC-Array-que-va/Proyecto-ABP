@@ -10,8 +10,8 @@ Mapa de lugares de adopción, Descripción de la mascota, Fotos del lugar, Redes
 
 ### Miembros del Equipo:
 
-- Iván Bürcher
-- Valen Flores
+- Iván Bürcher 
+- Valen Flores 
 - Juan Morales
 - Exequiel Vera
 - Lautaro Faure
