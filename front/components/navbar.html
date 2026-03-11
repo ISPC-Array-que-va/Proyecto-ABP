@@ -1,31 +1,37 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %} Hocico {% endblock %}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-</head>
-<body>
+<nav class="navbar navbar-expand-lg shadow-sm" style="background-color: var(--bg-primary);">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="img/logo.png" alt="Logo Hocico" width="40" height="40" class="d-inline-block align-text-top me-2">
+      <span class="fw-bold" style="color: var(--color-primary);">HOCICO</span>
+    </a>
 
-    <header>
-        <nav>
-            <h1>HOCICO 🐾</h1>
-            <ul>
-                <li><a href="/">Inicio</a></li>
-                <li><a href="/mapa">Mapa</a></li>
-                <li><a href="/contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <main>
-        {% block content %}{% endblock %}
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Proyecto Hocico - Adoptá, no compres.</p>
-    </footer>
-
-</body>
-</html>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto text-center">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mascotas.html">Mascotas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="establecimientos.html">Establecimientos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="articulos.html">Artículos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="soporte.html">Soporte</a>
+        </li>
+        <li class="nav-item ms-lg-3">
+          <button class="btn btn-outline-secondary btn-sm mt-2 mt-lg-0" id="theme-btn">
+            🌓 Modo
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

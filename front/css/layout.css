@@ -1,2 +1,12 @@
 /*Define la estructura "macro": el Navbar, el Footer y
-el sistema de Grid o Flexbox que organiza las secciones principales
+el sistema de Grid o Flexbox que organiza las secciones principales*/
+
+.nav-link {
+    color: var(--color-text);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--color-primary);
+}

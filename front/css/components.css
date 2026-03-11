@@ -1,5 +1,14 @@
 /* BOTTONS - CARDS - IMPUTS */
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1; /* Esto empuja al footer hacia abajo */
+}
 
 .card {
   background: white; /* O var(--color-card-bg) si hiciste tema oscuro */
