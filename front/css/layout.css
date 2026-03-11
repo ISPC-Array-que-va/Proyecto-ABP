@@ -10,3 +10,60 @@ el sistema de Grid o Flexbox que organiza las secciones principales*/
 .nav-link:hover {
     color: var(--color-primary);
 }
+
+.navbar {
+    backdrop-filter: blur(10px); /* Desenfoque de fondo */
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* En modo oscuro ajustamos la transparencia */
+body.dark-mode .navbar {
+    background-color: rgba(30, 41, 91, 0.8) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Layout del Index */
+
+.hero-section {
+    background: linear-gradient(rgba(30, 41, 91, 0.8), rgba(30, 41, 91, 0.8)), 
+                url('../img/hero-bg.jpg') center/cover;
+    min-height: 80vh;
+    border-radius: 0 0 50px 50px; /* Curva suave abajo */
+}
+
+/* Animación de la imagen flotante */
+.floating-img {
+    animation: floating 3s ease-in-out infinite;
+    max-height: 400px;
+    filter: drop-shadow(0 20px 30px rgba(0,0,0,0.3));
+}
+
+@keyframes floating {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Tarjetas de categorías con hover suave */
+.hover-up {
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.hover-up:hover {
+    transform: translateY(-10px);
+    border-color: var(--color-primary);
+}
+
+.icon-circle {
+    font-size: 2.5rem;
+    background: var(--color-accent);
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto;
+}

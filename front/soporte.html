@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soporte y Ayuda - Hocico</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <div id="navbar-placeholder"></div>
+
+    <main class="container my-5 pt-4">
+        <header class="text-center mb-5">
+            <h1 class="display-4 fw-bold">¿Cómo podemos ayudarte?</h1>
+            <p class="lead text-muted">Estamos acá para acompañarte en el proceso de adopción y cuidado.</p>
+        </header>
+
+        <div class="row g-5">
+            <div class="col-lg-7">
+                <h3 class="fw-bold mb-4">Preguntas Frecuentes</h3>
+                <div class="accordion accordion-flush" id="accordionFAQ">
+                    <div class="accordion-item shadow-sm mb-3 rounded-4 overflow-hidden">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                ¿Cuáles son los requisitos para adoptar?
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                            <div class="accordion-body text-muted">
+                                Ser mayor de 21 años, presentar DNI, comprobante de domicilio y, sobre todo, muchas ganas de dar amor. Realizamos una entrevista previa para asegurar el bienestar de la mascota.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item shadow-sm mb-3 rounded-4 overflow-hidden">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                ¿Tiene algún costo la adopción?
+                            </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                            <div class="accordion-body text-muted">
+                                La adopción es gratuita. Sin embargo, aceptamos donaciones voluntarias para seguir rescatando y vacunando a más peluditos.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-5">
+                <div class="card border-0 shadow-lg p-4 rounded-5" style="background-color: var(--color-background);">
+                    <h3 class="fw-bold mb-3">Envianos un mensaje</h3>
+                    <form id="contact-form">
+                        <div class="mb-3">
+                            <label class="form-label small fw-bold">Nombre Completo</label>
+                            <input type="text" class="form-control rounded-pill border-0 bg-light p-3" id="name" placeholder="Tu nombre..." required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label small fw-bold">Correo Electrónico</label>
+                            <input type="email" class="form-control rounded-pill border-0 bg-light p-3" id="email" placeholder="ejemplo@correo.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label small fw-bold">Asunto</label>
+                            <select class="form-select rounded-pill border-0 bg-light p-3" id="subject">
+                                <option value="adopcion">Quiero adoptar</option>
+                                <option value="reporte">Reportar maltrato</option>
+                                <option value="otro">Otro motivo</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label small fw-bold">Mensaje</label>
+                            <textarea class="form-control rounded-4 border-0 bg-light p-3" id="message" rows="4" placeholder="¿En qué podemos ayudarte?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 rounded-pill py-3">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/components.js"></script>
+    <script src="js/theme-toggle.js"></script>
+    <script src="js/validators.js"></script>
+</body>
+</html>

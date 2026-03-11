@@ -1,0 +1,27 @@
+/* Colores cuando el modo oscuro está activo */
+/* themes.css */
+
+body.dark-mode {
+    --color-primary: #7dd3fc;
+    --color-secondary: #1e295b;
+    --color-accent: #121926;
+    --color-background: #1e295b;
+    --color-text: #e2e9f0;
+}
+
+/* Ajustes suaves para elementos específicos */
+body.dark-mode .card {
+    background-color: #1e1e1e;
+    border-color: var(--border-color);
+}
+
+body.dark-mode .nav-link {
+    color: #b0b0b0;
+}
+
+/* Transición para que el cambio no sea brusco */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+

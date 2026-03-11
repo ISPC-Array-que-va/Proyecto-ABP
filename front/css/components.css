@@ -7,21 +7,161 @@ body {
 }
 
 main {
-    flex: 1; /* Esto empuja al footer hacia abajo */
+    flex: 1;
+    /* Esto empuja al footer hacia abajo */
 }
 
-.card {
-  background: white; /* O var(--color-card-bg) si hiciste tema oscuro */
-  border-top: 5px solid var(--color-primary);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  padding: 20px;
+
+.custom-card {
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    background-color: var(--color-background);
+    color: var(--color-text);
+    background: white;
+    /* O var(--color-card-bg) si hiciste tema oscuro */
+    border: none;
+    border-radius: 20px;
+    border-top: 5px solid var(--color-primary);
+    overflow: hidden;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 20px;
 }
 
-.btn-accent {
-  background-color: var(--color-accent);
-  border: none;
-  padding: 10px 20px;
-  border-radius: var(--radius);
-  cursor: pointer;
+.custom-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Estilo de la imagen de la mascota */
+.custom-card img {
+    height: 250px;
+    object-fit: cover;
+    /* Evita que la foto se estire */
+    border-radius: 20px 20px 0 0;
+}
+
+.card-title {
+    font-family: var(--font-titles);
+    /* Quicksand */
+    color: var(--color-primary);
+}
+
+.card-text {
+    font-family: var(--font-body);
+    /* Inter */
+}
+
+/* Badge de estado (Macho/Hembra) */
+.pet-badge {
+    background: rgba(45, 157, 143, 0.1);
+    color: var(--color-primary);
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+
+.btn-primary {
+    border: none;
+    font-weight: 600;
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-family: var(--font-body);
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    border: none;
+    padding: 12px 28px;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-secondary);
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(45, 157, 143, 0.4);
+    filter: brightness(1.1);
+}
+
+/* Estilo para las etiquetas de categoría (Badges) */
+.badge-hocico {
+    background-color: var(--color-accent);
+    color: var(--color-secondary);
+    border-radius: 50px;
+    padding: 5px 15px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Estilo para el acordeón de soporte */
+.accordion-item {
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 15px !important;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+/* Card Horizontal para Establecimientos */
+.card-horizontal {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 768px) {
+    .card-horizontal {
+        flex-direction: column;
+    }
+}
+
+
+.card-img-top {
+    transition: transform 0.5s ease;
+}
+
+.custom-card:hover .card-img-top {
+    transform: scale(1.05); /* Zoom suave al pasar el mouse */
+}
+
+.badge {
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 0.7rem;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 767px) {
+    .custom-card img {
+        height: 200px !important; /* Altura fija solo en móviles para que no ocupe toda la pantalla */
+    }
+}
+
+/* Ajuste para el acordeón de Bootstrap */
+.accordion-button:not(.collapsed) {
+    background-color: var(--color-primary);
+    color: white;
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0,0,0,0.1);
+}
+
+/* Inputs del formulario */
+.form-control:focus, .form-select:focus {
+    background-color: #fff;
+    box-shadow: 0 0 0 0.25rem rgba(45, 157, 143, 0.15);
+    border: 1px solid var(--color-primary) !important;
+}
+
+/* Modo oscuro para el formulario */
+body.dark-mode .bg-light {
+    background-color: #2b2b2b !important;
+    color: white;
 }

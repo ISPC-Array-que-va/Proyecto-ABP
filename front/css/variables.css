@@ -13,15 +13,16 @@ No debe tener selectores de clases */
   --color-accent: #f2994a;
   --color-background: #f8f9fa;
   --color-text: #333333;
-}
+  
+  /* Tipografías */
+    --font-titles: 'Quicksand', sans-serif;
+    --font-body: 'Inter', sans-serif;
 
-/* Esto lo puedes mover a themes.css más adelante si prefieres */
-@media (prefers-color-scheme: dark) {
-  :root {
-  --color-primary: #7dd3fc;
-  --color-secondary: #1e295b;
-  --color-accent: #121926;
-  --color-background: #1e295b;
-  --color-text: #e2e9f0;
-  }
+    /* Sombras */
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+    /*Radio bor4des*/
+    --radius: 50px;
+  
+
 }
