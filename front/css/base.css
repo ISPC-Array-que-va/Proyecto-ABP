@@ -1,0 +1,42 @@
+/*Quitar los márgenes por defecto del navegador,
+definir la tipografía global y que el box-sizing sea border-box.
+
+/* 1. Usar un modelo de caja más intuitivo */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Eliminar márgenes por defecto de los navegadores */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Evitar que las imágenes se salgan de su contenedor */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 4. Tipografía base y suavizado */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  min-height: 100vh;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: sans-serif;
+}
+
+/* 5. Eliminar estilos de lista y enlaces por defecto */
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+

@@ -1,0 +1,18 @@
+/* BOTTONS - CARDS - IMPUTS */
+
+
+.card {
+  background: white; /* O var(--color-card-bg) si hiciste tema oscuro */
+  border-top: 5px solid var(--color-primary);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 20px;
+}
+
+.btn-accent {
+  background-color: var(--color-accent);
+  border: none;
+  padding: 10px 20px;
+  border-radius: var(--radius);
+  cursor: pointer;
+}

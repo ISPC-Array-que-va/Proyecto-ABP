@@ -1,0 +1,27 @@
+/*Colores, tamaños de fuente, sombras y espaciados. 
+No debe tener selectores de clases */
+
+:root {
+  /* Espaciado */
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 32px;
+
+  /* Colores (Tema Claro por defecto) */
+  --color-primary: #2d9cdb;
+  --color-secondary: #f8f9fa;
+  --color-accent: #f2994a;
+  --color-background: #f8f9fa;
+  --color-text: #333333;
+}
+
+/* Esto lo puedes mover a themes.css más adelante si prefieres */
+@media (prefers-color-scheme: dark) {
+  :root {
+  --color-primary: #7dd3fc;
+  --color-secondary: #1e295b;
+  --color-accent: #121926;
+  --color-background: #1e295b;
+  --color-text: #e2e9f0;
+  }
+}

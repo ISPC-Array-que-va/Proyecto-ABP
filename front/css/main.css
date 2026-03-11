@@ -1,0 +1,8 @@
+/* Importando por capas de responsabilidad */
+@import "./base.css";
+@import "./variables.css";
+@import "./layout.css";
+@import "./components.css";
+@import "./themes.css";
+
+
