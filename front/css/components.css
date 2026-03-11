@@ -4,6 +4,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    padding-top: 80px;
 }
 
 main {
@@ -113,11 +114,7 @@ main {
     flex-direction: row;
 }
 
-@media (max-width: 768px) {
-    .card-horizontal {
-        flex-direction: column;
-    }
-}
+
 
 
 .card-img-top {
@@ -135,11 +132,7 @@ main {
     letter-spacing: 0.5px;
 }
 
-@media (max-width: 767px) {
-    .custom-card img {
-        height: 200px !important; /* Altura fija solo en móviles para que no ocupe toda la pantalla */
-    }
-}
+
 
 /* Ajuste para el acordeón de Bootstrap */
 .accordion-button:not(.collapsed) {
@@ -164,4 +157,40 @@ main {
 body.dark-mode .bg-light {
     background-color: #2b2b2b !important;
     color: white;
+}
+
+/* Estilos para la Tienda */
+
+.product-card {
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background-color: var(--bg-primary);
+}
+
+.product-card:hover {
+    transform: scale(1.03);
+}
+
+.product-card img {
+    background-color: #f8f9fa; /* Fondo neutro para resaltar el producto */
+    transition: all 0.3s ease;
+}
+
+body.dark-mode .product-card img {
+    background-color: #2b2b2b;
+}
+
+/* El botón circular de "Agregar" */
+.btn-primary.rounded-circle {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    padding: 0;
+}
+
+/* Badge de oferta o nuevo */
+.bg-accent {
+    background-color: var(--color-accent) !important;
 }

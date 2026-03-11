@@ -1,0 +1,11 @@
+@media (max-width: 767px) {
+    .custom-card img {
+        height: 200px !important; /* Altura fija solo en móviles para que no ocupe toda la pantalla */
+    }
+}
+
+@media (max-width: 768px) {
+    .card-horizontal {
+        flex-direction: column;
+    }
+}
