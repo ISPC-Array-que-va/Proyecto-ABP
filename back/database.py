@@ -1,1 +1,0 @@
-#Solo la configuración y conexión a SQL.#
